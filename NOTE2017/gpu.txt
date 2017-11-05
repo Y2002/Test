@@ -3,11 +3,49 @@ file:///C:/Program%20Files/NVIDIA%20GPU%20Computing%20Toolkit/CUDA/v8.0/doc/html
 C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0
 [1104]
 D:\2017TF\VDCNN\ad3
-i change the format of csv to make it run. it is a big success!!![1104]
+i change the format of csv to make it run. it is a big success!!![1104][data has the issue ' in conv]
 [1105]on windows convert the file format to cp1215
 D:\2017TF\csvConvert
 D:\2017TF\VDCNN123     VDCNN123 means 123 to run it
 D:\2017TF\VDCNN3conv   load the serverModel and resume it on my win
+D:\2017TF\vdcnn-hackathon\vdcnn-hackathon\VDCNN3\VDCNN3
+D:\2017TF\vdcnn-hackathon\vdcnn-hackathon\VDCNN3\VDCNN3  sucess to connect to previous model trained on com machine
+
+sogou 
+dbp  []
+alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789-,;.!?:’"/|_#$%ˆ&*˜‘+=<>()[]{} '
+sequence_max_length = 1014*2
+sequence_max_length = 1014*50[20]      data = np.ones(sequence_max_length)*68  MemoryError
+C:\Python35\python.exe D:/2017TF/VDCNN-1sogou/train2ad2dbpedia.py
+Parameters:
+batch_size=128
+database_path=dbpedia_csv_cov_small/
+dropout_keep_prob=1.0
+evaluate_every=50
+l2_reg_lambda=0.0
+learning_rate=0.01
+num_epochs=200
+sequence_max_length=1014
+use_k_max_pooling=False
+
+Loading data...
+Loading data succees...
+2017-11-05 13:51:01.311680: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2017-11-05 13:51:01.639970: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.66GiB
+2017-11-05 13:51:01.640434: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Traceback (most recent call last):
+  File "D:/2017TF/VDCNN-1sogou/train2ad2dbpedia.py", line 97, in <module>
+    train_step(x_batch, y_batch)
+  File "D:/2017TF/VDCNN-1sogou/train2ad2dbpedia.py", line 72, in train_step
+    _, step, loss, accuracy = sess.run([train_op, global_step, cnn.loss, cnn.accuracy], feed_dict)
+  File "C:\Python35\lib\site-packages\tensorflow\python\client\session.py", line 889, in run
+    run_metadata_ptr)
+  File "C:\Python35\lib\site-packages\tensorflow\python\client\session.py", line 1096, in _run
+    % (np_val.shape, subfeed_t.name, str(subfeed_t.get_shape())))
+ValueError: Cannot feed value of shape (128, 15210) for Tensor 'input_x:0', which has shape '(?, 1014)'
 
 
 
