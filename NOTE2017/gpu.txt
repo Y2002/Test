@@ -1,0 +1,13 @@
+[1104]
+file:///C:/Program%20Files/NVIDIA%20GPU%20Computing%20Toolkit/CUDA/v8.0/doc/html/index.html
+C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0
+[1104]
+D:\2017TF\VDCNN\ad3
+i change the format of csv to make it run. it is a big success!!![1104]
+[1105]on windows convert the file format to cp1215
+D:\2017TF\csvConvert
+D:\2017TF\VDCNN123     VDCNN123 means 123 to run it
+D:\2017TF\VDCNN3conv   load the serverModel and resume it on my win
+
+
+
